@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+    <title>Calculadora de bienes raices</title>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8">
+    <script type="text/javascript" src="js/funciones.js">
+    </script>
+
+    <body>
+    <br>
+    <h1>Datos Basicos</h1>
+    Seleccione la ciudad: 
+    <select id="ciudad">
+        <option disabled selected>Seleccione la ciudad</option>
+        <option value="2918180">Bogota Estrato 1</option>
+        <option value="4166666">Bogota Estrato 2</option>
+        <option value="6643357">Bogota Estrato 3</option>
+    </select>
+    <button onclick="VerificarCiudad()">Click</button>
+    <input id="ciudadmensaje" type="number">   
+
+    <br>
+    <br>
+
+    <label>Direccion: </label>
+    <input type="text" id="direccion">
+
+    <br>
+    <br>
+
+    Seleccione el estrato de la vivienda: 
+    <select id="menuestrato">
+        <option disabled selected>Seleccione el estrato</option>
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+        <option>6</option>
+    </select>
+    <button onclick="VerificarEstrato()">Click</button>
+    <p id="estratomensaje"></p>
+
+    <br>
+    
+    <h1>Conociendo tu vivienda</h1>
+
+    Seleccione el tipo de vivienda: 
+    <select id="tipovivienda">
+        <option disabled selected>Seleccione el tipo de vivienda</option>
+        <option value="12">Casa</option>
+        <option value="0">Apartamento</option>
+    </select>
+
+    <br>
+    <br>
+
+    <label>Ingrese el Area de la vivienda: </label>
+    <input id="ingresometros" type="number">
+
+    <br>
+    <br>
+
+    <label>Años de Antiguedad: </label>
+    <input type="number" name="" id="antiguedad" placeholder="Años de antiguedad">
+
+    <br>
+    <br>
+
+    ¿Centros Comerciales cerca?: 
+    <select id="centrocomercial">
+        <option disabled selected>Seleccione</option>
+        <option value="23">Si</option>
+        <option value="0">No</option>
+    </select>
+
+    ¿Parques cerca?: 
+    <select id="parque">
+        <option disabled selected>Seleccione</option>
+        <option value="10">Si</option>
+        <option value="0">No</option>
+    </select>
+    <br>
+    <br>
+
+    <h1>Otras Caracteristicas</h1>
+    <br>
+
+    <label>Numero de habitaciones: </label>
+    <input type="number" name="" id="habitaciones" placeholder="N habitaciones">
+    <button onclick="PorcentajeHabitaciones()">Haga Click</button>
+    <input id="porcentajehabitacion" type="number">
+
+    <br>
+    <br>
+
+    <label>Numero de baños: </label>
+    <input type="number" name="" id="banos" placeholder="N baños">
+    <button onclick="PorcentajeBanos()">Haga Click</button>
+    <input id="porcentajebanos" type="number">
+    
+    <br>
+    <br>
+
+    <h1>Resultado</h1>
+
+
+    <button  type="button" onclick="SumarPorcentajes()">Sumar Porcentajes</button>
+    <input id="resultadoporcentajes" type="number">
+
+    <br>
+    <br>
+
+    <label>Valor M2: </label>
+    <input id="valormetro" type="number">
+    <button  type="button" onclick="CalcularValorTotal()">Calcular Valor M2</button>
+
+    <br>
+    <br>
+
+    <label>Valor Venta: </label>
+    <input id="valorventa" type="number">
+
+    <br>
+    <br>
+
+    <label>Valor Arriendo: </label>
+    <input id="valorarriendo" type="number">
+
+    <br>
+    <br>
+
+    </body>
+</html>
