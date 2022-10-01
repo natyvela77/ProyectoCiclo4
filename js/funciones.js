@@ -1,12 +1,12 @@
 function VerificarCiudad() {
-    var value = document.getElementById('ciudad').value;
+    var ciudadIngresada = document.getElementById('ciudad').value; //STRING CIUDADNAME     
     document.getElementById('ciudadmensaje').value = document.getElementById('ciudad').value;
     }
 
 
 function VerificarEstrato() {
-    var value = document.getElementById('menuestrato').value;
-    switch (value) {
+    var estratoIngresado = document.getElementById('menuestrato').value;
+    switch (estratoIngresado) {
         case "1":
             document.getElementById('estratomensaje').innerHTML="Elegiste 1"
             break;
@@ -95,6 +95,19 @@ function SumarPorcentajes() {
 }
 
 function CalcularValorTotal() {
+    var ciudadIngresada = document.getElementById('ciudad').value;
+    var estratoIngresado = document.getElementById('menuestrato').value;
+    // consulta en base de datos SELECT CIUDAD = ciudadIngresada AND estra
+        
+    var valorPorCiudadEstrato= 0;
+    if (ciudadIngresada == "Bogota") {
+        if (Estrato == 1) {
+            valorPorCiudadEstrato= 290000000;
+        }
+    }
+    
+            
+            
         var x = parseInt(document.getElementById('ciudadmensaje').value);
         var z = parseInt(document.getElementById('resultadoporcentajes').value);
         document.getElementById('valormetro').value = ((x*z)/100)+x;
