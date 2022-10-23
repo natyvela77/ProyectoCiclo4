@@ -1,7 +1,0 @@
-beans\Bienes.class
-controller\IBienesController.class
-beans\Contrato.class
-controller\IUsuarioController.class
-servlets\ServletUsuarioRegister.class
-servlets\ServletBienesRegister.class
-servlets\ServletUsuarioLogin.class
